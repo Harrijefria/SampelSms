@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">library</string>
+    <string name="cat_textfield_label_read">Nomor Pengirim</string>
+    <string name="cat_textfield_outline_dense_helper_text_read">Nomor Pengirim</string>
+    <string name="cat_textfield_filled_dense_helper_text_Pesan">Pesan</string>
+    <string name="cat_textfield_label_Pesan">Pesan</string>
+    <string name="cat_textfield_filled_helper_text_psn">Hasil Dekripsi</string>
+    <string name="cat_textfield_label_hsl">Hasil Dekripsi</string>
 </resources>

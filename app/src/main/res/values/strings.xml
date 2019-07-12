@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">reka ulang ke jadian</string>
+
+    <string name="app_name">SMS</string>
     <string name="cat_textfield_outline_helper_text">Silahkan Masukan No. Anda</string>
     <string name="cat_textfield_outline_dense_helper_text">Password Pesan</string>
     <string name="cat_textfield_tulispesan">Tulis Pesan</string>
@@ -10,22 +11,27 @@
     <string name="cat_textfield_filled_helper_hasilpesanenkripsi">Hasil Pesan Enkripsi</string>
     <string name="title_activity_inbox">inbox</string>
     <string name="password">Password</string>
-    <string name="cat_textfield_password">password</string>
+    <string name="cat_textfield_password">Password</string>
     <string name="cat_textfield_filled_dense_password_helper_text">Masukan Passsword Anda</string>
     <string name="cat_textfield_filled_dense_helper_text">No Tujuan</string>
 
     <string name="cat_shape_theming_dialog_title">Title</string>
     <string name="cat_shape_theming_dialog_message">Message</string>
     <string name="cat_shape_theming_dialog_ok">OK</string>
-    <string name="cat_textfield_label">Tulis Pesan</string>
+    <string name="cat_textfield_label">No Tujuan</string>
     <string name="hasil_Enkripsi">Pesan Ini Telah Di Enkripsi</string>
     <string name="buat_pesan">Buat Pesan</string>
     <string name="tulis_pesan_rahasia_anda">Tulis Pesan Rahasia Anda</string>
     <string name="pesan_masuk">Pesan Masuk</string>
-    <string name="check_your_bank_activities">check_your_bank_activities</string>
-    <string name="about">about</string>
+    <string name="check_your_bank_activities">Inbox Pesan Rahasia Anda</string>
+    <string name="about">Tentang Kami</string>
     <string name="todo">todo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="check_your_abaut_activities">Tentang Kami</string>
+    <string name="cat_textfield_label_pesan">Tulis Pesan</string>
+    <string name="cat_textfield_label_read">No Pengirim</string>
+    <string name="cat_textfield_outline_dense_helper_text_read">No Pengirim</string>
+
 </resources>

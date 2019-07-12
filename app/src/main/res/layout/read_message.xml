@@ -17,8 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:hint="@string/cat_textfield_label"
-            app:helperText="@string/cat_textfield_outline_dense_helper_text"
+            android:hint="@string/cat_textfield_label_read"
+            app:helperText="@string/cat_textfield_outline_dense_helper_text_read"
             app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -33,11 +33,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:hint="@string/cat_textfield_label"
+            android:hint="@string/cat_textfield_label_Pesan"
             app:counterEnabled="true"
             app:counterMaxLength="10"
             app:errorEnabled="true"
-            app:helperText="@string/cat_textfield_filled_dense_helper_text"
+            app:helperText="@string/cat_textfield_filled_dense_helper_text_Pesan"
             app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -48,6 +48,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/notice0"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +60,7 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mKunci"
+                android:id="@+id/NoKunci"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
@@ -110,8 +111,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:hint="@string/cat_textfield_label"
-            app:helperText="@string/cat_textfield_filled_helper_text"
+            android:hint="@string/cat_textfield_label_hsl"
+            app:helperText="@string/cat_textfield_filled_helper_text_psn"
             app:helperTextEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText

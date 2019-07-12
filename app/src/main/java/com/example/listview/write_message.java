@@ -35,42 +35,21 @@ public class write_message extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.write_message);
 
-        mNoKunci = (TextInputEditText) findViewById(R.id.NoKunci);
-        mNoTujuan = (TextInputEditText) findViewById(R.id.NoTujuan);
-        mTulisPesan = (TextInputEditText) findViewById(R.id.TulisPesan);
-        mHasilEnkripsi = (TextInputEditText) findViewById(R.id.HasilEnkripsi);
+        mNoKunci = findViewById(R.id.NoKunci);
+        mNoTujuan = findViewById(R.id.NoTujuan);
+        mTulisPesan = findViewById(R.id.TulisPesan);
+        mHasilEnkripsi = findViewById(R.id.HasilEnkripsi);
 
-        mEnkripsi = (CardView) findViewById(R.id.Enkripsi);
-        mKirimPesan = (CardView) findViewById(R.id.KirimPesan);
-        mContact = (Button) findViewById(R.id.Contact);
+        mEnkripsi = findViewById(R.id.Enkripsi);
+        mKirimPesan = findViewById(R.id.KirimPesan);
+        mContact = findViewById(R.id.Contact);
         mHasilEnkripsi.setFocusable(false);
 
-        mContact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Uri uriContact = ContactsContract.Contacts.CONTENT_URI;
-                Intent intentPickContact = new Intent(Intent.ACTION_PICK, uriContact);
-                startActivityForResult(intentPickContact, RQS_PICK_CONTACT);
-            }
-        });
-
-        findViewById(R.id.Enkripsi).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Enkripsi();
-            }
-        });
-
-        mKirimPesan.setOnClickListener(new CardView.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                KirimPesan();
-            }
-        });
+        mContact.setOnClickListener(v -> { final Uri uriContact = ContactsContract.Contacts.CONTENT_URI; Intent intentPickContact = new Intent(Intent.ACTION_PICK, uriContact); startActivityForResult(intentPickContact, RQS_PICK_CONTACT);});
+        findViewById(R.id.Enkripsi).setOnClickListener(v -> Enkripsi());
+        mKirimPesan.setOnClickListener(v -> KirimPesan());
 
     }
-
-
 
     private void Enkripsi() {
         RC6 rc6 = new RC6();
@@ -98,6 +77,7 @@ public class write_message extends AppCompatActivity {
         }
 
     }
+
     private String byteArrayToHexString(byte[] b) {
         StringBuffer sb = new StringBuffer(b.length * 2);
         for (int i = 0; i < b.length; i++) {

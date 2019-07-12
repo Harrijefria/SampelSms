@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,19 +8,17 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="504dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="150dp"
-        android:background="@color/colorPrimary"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,7 +30,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/bankcardId"
                 android:layout_width="160dp"
-                android:layout_height="190dp"
+                android:layout_height="200dp"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
@@ -78,7 +77,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
-                android:layout_height="190dp"
+                android:layout_height="200dp"
                 android:layout_margin="10dp"
                 android:clickable="true"
                 android:focusable="true"
@@ -134,7 +133,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView4"
                 android:layout_width="340dp"
-                android:layout_height="150dp"
+                android:layout_height="170dp"
                 android:layout_margin="10dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
@@ -147,7 +146,6 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/bankcardId"
-                app:layout_constraintStart_toStartOf="@+id/cardView2"
                 app:layout_constraintTop_toBottomOf="@+id/bankcardId">
 
                 <LinearLayout
@@ -183,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="@string/check_your_bank_activities"
+                        android:text="@string/check_your_abaut_activities"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
